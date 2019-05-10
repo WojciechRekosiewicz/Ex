@@ -24,6 +24,16 @@ namespace Ex
             Console.WriteLine(p1.GetHashCode());
             Console.WriteLine(p2.GetHashCode());
             Console.WriteLine(people.Count);
+            if (p1.Equals(p2))
+            {
+                Console.WriteLine(true);
+            }
+            else
+            {
+                Console.WriteLine(false);
+            }
+
+   
         }
     }
 }

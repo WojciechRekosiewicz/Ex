@@ -20,7 +20,18 @@ namespace Ex
 
         public override bool Equals(object obj)
         {
-            return true;
+            if (obj == null)
+            {
+                return false;
+            }
+
+            if (this.GetType() != obj.GetType())
+            {
+                return false;
+            }
+
+            Person p = (Person)obj;
+            return (this.name == p.name) && (this.age == p.age);
         }
 
 
@@ -28,8 +39,5 @@ namespace Ex
         {
             return 13 * this.name.GetHashCode() * age.GetHashCode();
         }
-
-
-      
     }
 }
