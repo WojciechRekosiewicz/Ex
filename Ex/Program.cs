@@ -8,7 +8,7 @@ namespace Ex
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             var people = new List<Person>();
 
