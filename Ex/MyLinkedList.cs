@@ -16,6 +16,7 @@ namespace Ex
             if (Head == null)
             {
                 Head = new Node<T>(data);
+                return;
             }
             Node<T> current = Head;
             while (current.Next != null)
@@ -36,6 +37,7 @@ namespace Ex
             {
                 return x;
             }
+
             Node<T> current = Head;
             while (current.Next != null)
             {
