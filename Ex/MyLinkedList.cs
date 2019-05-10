@@ -38,6 +38,7 @@ namespace Ex
                 return x;
             }
 
+            x++;
             Node<T> current = Head;
             while (current.Next != null)
             {
