@@ -23,6 +23,7 @@ namespace Ex
                 current = current.Next;
             }
             current.Next = new Node<T>(data);
+            
             Console.WriteLine($"{data} added!");
         }
 

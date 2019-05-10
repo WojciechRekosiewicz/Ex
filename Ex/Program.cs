@@ -51,19 +51,21 @@ namespace Ex
 
 
 
-            Console.WriteLine(myList.Count());
+            Console.WriteLine($"Number of elements in this list is { myList.Count()}");
             myList.AddLast(1);
-            Console.WriteLine(myList.Count());
+            Console.WriteLine($"Number of elements in this list is { myList.Count()}");
             myList.AddLast(2);
-            Console.WriteLine(myList.Count());
+            Console.WriteLine($"Number of elements in this list is { myList.Count()}");
             myList.AddLast(3);
-            Console.WriteLine(myList.Count());
+            Console.WriteLine($"Number of elements in this list is { myList.Count()}");
+
+            Console.WriteLine();
 
 
             MyLinkedList<string> myList1 = new MyLinkedList<string>();
 
             myList1.AddLast("kappa");
-            Console.WriteLine(myList1.Count());
+            Console.WriteLine($"Number of elements in this list is { myList.Count()}");
 
         }
     }
