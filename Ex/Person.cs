@@ -8,8 +8,8 @@ namespace Ex
 {
     class Person
     {
-        private string name;
-        private int age;
+        private readonly string name;
+        private readonly int age;
 
         public Person(string name, int age)
         {
@@ -20,6 +20,8 @@ namespace Ex
 
         public override bool Equals(object obj)
         {
+            Person p = (Person)obj;
+
             if (obj == null)
             {
                 return false;
@@ -30,14 +32,13 @@ namespace Ex
                 return false;
             }
 
-            Person p = (Person)obj;
             return (this.name == p.name) && (this.age == p.age);
         }
 
 
         public override int GetHashCode()
         {
-            return 13 * this.name.GetHashCode() * age.GetHashCode();
+            return 13 * name.GetHashCode() * age.GetHashCode();
         }
     }
 }

@@ -23,17 +23,48 @@ namespace Ex
 
             Console.WriteLine(p1.GetHashCode());
             Console.WriteLine(p2.GetHashCode());
+
+
+
             Console.WriteLine(people.Count);
+
+            //EQUALS
+
             if (p1.Equals(p2))
             {
-                Console.WriteLine(true);
+                Console.WriteLine("p1 equals p2");
             }
             else
             {
-                Console.WriteLine(false);
+                Console.WriteLine("p1 not equals p2");
             }
+            
+            
+            
+            
+            
+            
+            //LINKED LIST
 
-   
+
+            MyLinkedList<int> myList = new MyLinkedList<int>();
+
+
+
+            Console.WriteLine(myList.Count());
+            myList.AddLast(1);
+            Console.WriteLine(myList.Count());
+            myList.AddLast(2);
+            Console.WriteLine(myList.Count());
+            myList.AddLast(3);
+            Console.WriteLine(myList.Count());
+
+
+            MyLinkedList<string> myList1 = new MyLinkedList<string>();
+
+            myList1.AddLast("kappa");
+            Console.WriteLine(myList1.Count());
+
         }
     }
 }
